@@ -1139,20 +1139,6 @@
             document.title = originalTitle;
         }, 1000);
     }
-    // Set your custom password here
-    const ACCESS_PASSWORD = "SAQ-Asim0066";
-
-    // Block access until password is correct
-    (function verifyAccess() {
-        let userEntered = prompt("Enter the password to access this generator:");
-        if (userEntered !== ACCESS_PASSWORD) {
-            alert("Incorrect password. Access denied.");
-            document.write("<h2 style='font-family:sans-serif; text-align:center; margin-top:50px;'>🔒 Access Denied</h2>");
-            window.stop();
-        }
-    })();
-
-    // Rest of your JavaScript functions (generateReport, getCustomPdfName, etc.) go here...
 </script>
 
 </body>
