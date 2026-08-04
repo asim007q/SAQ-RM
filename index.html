@@ -11,7 +11,7 @@
             font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background-color: #f4f7f6;
             color: #333;
-            line-height: 1.3;
+            line-height: 1.0;
             margin: 0;
             padding: 6px;
         }
@@ -918,7 +918,7 @@
 
         const dateVal = new Date(document.getElementById('date').value);
         document.getElementById('p-date').innerText = dateVal.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-        document.getElementById('p-remarks').innerText = document.getElementById('remarks').value || "No remarks provided.";
+        document.getElementById('p-remarks').textContent = data.remarks || 'No remarks provided.';
 
         // Gather family members data points
         const memberSections = document.querySelectorAll('.member-section');
