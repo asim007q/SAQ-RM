@@ -164,7 +164,7 @@
             background: #fff;
         }
         .print-wrapper {
-            margin-top: 30px;
+            margin-top: 6px;
         }
         .report-header-table {
             display: table;
@@ -220,7 +220,7 @@
             background-color: #f0fbf8;
             border-left-color: #16a085;
             border: 1px solid #d1f2eb;
-            border-left-width: 6px;
+            border-left-width: 2px;
         }
         .block-family h2 {
             color: #16a085;
@@ -232,7 +232,7 @@
             background-color: #f7f5fa;
             border-left-color: #8e44ad;
             border: 1px solid #ebdff2;
-            border-left-width: 6px;
+            border-left-width: 2px;
         }
         .block-survey h2 {
             color: #8e44ad;
@@ -246,7 +246,7 @@
             margin-bottom: 5px;
         }
         .info-table td {
-            padding: 10px 12px;
+            padding: 6px 6px;
             border: 1px solid #dcdcdc;
             font-size: 0.95rem;
             background-color: #ffffff;
@@ -261,7 +261,7 @@
         .grid-table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 10px;
+            margin-bottom: 6px;
             background-color: #ffffff;
         }
         .grid-table th, .grid-table td {
@@ -366,6 +366,14 @@
                 margin-bottom: 4px !important;
             }
         }
+		table {
+  width: 100%;
+  table-layout: fixed; /* Fixes column widths to specified percentages */
+}
+		th, td {
+  overflow-wrap: break-word; /* Allows text to wrap onto the next line */
+  word-wrap: break-word;
+}
     </style>
 </head>
 <body>
