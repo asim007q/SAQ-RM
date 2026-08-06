@@ -506,7 +506,7 @@
                 <textarea id="remarks" placeholder="Add any additional notes here..."></textarea>
             </div>
 
-            <button type="button" onclick="generateReport()">Generate PDF Report</button>
+            <button onclick="generateReport(event)">Generate PDF Report</button>
         </form>
     </div>
 
@@ -1052,7 +1052,9 @@
     }
 
     function generateReport(event) {
+    if (event) {
         event.preventDefault();
+    }
 
         // Section 1 Injection
         document.getElementById('p-village').innerText = document.getElementById('village').value;
