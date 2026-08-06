@@ -726,7 +726,7 @@
 						</div>
 						<div class="form-group">
 						<label>Relation</label>
-						<select class="m-relation" required>
+						<select class="m-Relation" required>
         <option value="">Select Relation...</option>
         <option value="Aunty">Aunty</option>
         <option value="Brother">Brother</option>
@@ -1093,11 +1093,11 @@
             const finalTeacherName = rawTeacher === 'Other' ? section.querySelector('.m-custom-teacher').value : rawTeacher;
 
             familyArray.push({
-                name: section.querySelector('.m-name').value,
-                Relation: section.querySelector('.m-Relation').value,
-                age: section.querySelector('.m-age').value,
-                classGroup: section.querySelector('.m-class').value,
-                course: section.querySelector('.m-course').value,
+                name: section.querySelector('.m-name')?.value,
+                Relation: section.querySelector('.m-Relation')?.value,
+                age: section.querySelector('.m-age')?.value,
+                classGroup: section.querySelector('.m-class')?.value,
+                course: section.querySelector('.m-course')?.value,
                 teacher: finalTeacherName
             });
         });
