@@ -1056,6 +1056,15 @@
         event.preventDefault();
     }
 
+    // 1. Get your form (Make sure the ID matches your actual <form id="...">)
+    const myForm = document.getElementById("familyForm"); 
+
+    // 2. Check if all required fields are filled
+    if (!myForm.checkValidity()) {
+        myForm.reportValidity(); // This shows the browser's warning popups
+        return; // This stops the PDF from generating
+    }
+
         // Section 1 Injection
         document.getElementById('p-village').innerText = document.getElementById('village').value;
         document.getElementById('p-name').innerText = document.getElementById('beneficiaryName').value;
